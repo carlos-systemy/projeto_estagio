@@ -18,9 +18,18 @@
     }
     public static function save(){
         include'model/alunoModel.php';
-        var_dump($_POST);
+        
+        $model = new alunoModel();
 
-    }public static function delete(){
+        $model->nome = $_POST['nome'];
+        $model->cpf = $_POST['cpf'];
+        $model->endereco = $_POST['endereco'];
+        $model->idade = $_POST['idade'];
+        $model->cod_curso = $_POST['cod_curso'];
+
+        $model->save();
+    }
+    public static function delete(){
         include'model/alunoModel.php';
 
     }
