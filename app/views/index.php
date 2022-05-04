@@ -1,3 +1,4 @@
 <?php
-echo 'tudo ok';
+echo 'ok';
+
 ?>
