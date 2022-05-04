@@ -1,5 +1,5 @@
 <?php
-
+include'controller/alunoController.php';
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 
@@ -13,7 +13,7 @@ switch($url)
         alunoController::index();
     break;
 
-    case '/pessoa/form':
+    case '/aluno/form':
         alunoController::form();
     break;
 
