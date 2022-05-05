@@ -8,11 +8,17 @@ class alunoModel
 
     public function save()
     {
-        include'/projeto/proj_estagio/app/model/alunodbModel.php';
+        include'model/alunodbModel.php';
 
         $db = new alunodbModel();
+        
+        if(empty($this->id)){
+        
+            $db->insert($this);
+        }else{
+            $db->update($this);
+        }
 
-        $db->insert($this);
     }
 
     public function getAllRows()
@@ -24,7 +30,28 @@ class alunoModel
         $this->rows = $db->select();
     }
 
+    public function getById(int $id)
+    {
+        include'model/alunodbModel.php';
 
+        $db = new alunodbModel();
+
+        $obj =$db->selectByid($id);
+
+            if($obj)
+            {
+                    return $obj;
+            }else{
+                return new alunoModel;
+            }
+        
+    }
+    public function delete(int $id)
+    {
+        include 'model/alunodbModel.php';
+        $db = new alunodbModel;
+        $db->delete($id);
+    }
 
 
 }

@@ -15,22 +15,23 @@
         <legend>Cadastro de aluno</legend>
         <form action="/aluno/form/save" method="post">
 
+        <input type="hidden" value="<?= $model->id ?>" name="id">
             <label for="nome" >Nome:</label>
-            <input id="nome" value="" name="nome" type="text" required>
+            <input id="nome" value="<?= $model->nome ?>" name="nome" type="text" required>
 
             <label for="cpf" >CPF:</label>
-            <input id="cpf" value="" name="cpf" type="text" required>
+            <input id="cpf" value="<?= $model->cpf ?>" name="cpf" type="text" required>
 
             <label for="idade" >Idade:</label>
-            <input id="idade" value=""  name="idade" type="text" required>
+            <input id="idade" value="<?= $model->idade ?>"  name="idade" type="text" required>
 
             <label for="endereco">Endereço:</label>
-            <input id="endereco" value=""  name="endereco" type="text" required>
+            <input id="endereco" value="<?= $model->endereco ?>"  name="endereco" type="text" required>
 
             <label for="cod_curso" >Curso pretendido:</label>
-            <input id="cod_curso" value="" name="cod_curso" type="text" required>
+            <input id="cod_curso" value="<?= $model->cod_curso ?>" name="cod_curso" type="text" required>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Salvar</button>
         </form>
     </fieldset>
 </body>

@@ -20,14 +20,28 @@
          </tr>
          <?php foreach($model->rows as $item):?>
          <tr>
-             <td><?= $item->id ?></td>
-             <td><?= $item->nome ?></td>
+             <td>
+                 <a href="/aluno/delete?id=<?= $item->nome?>"></a>
+             </td>
+
+             <td><?= $item->id?></td>
+           
+
+             <td>
+                 <a href="/aluno/form?id=<?= $item->id?>"><?= $item->nome ?></a>
+             </td>
+
              <td><?= $item->cpf ?></td>
              <td><?= $item->idade ?></td>
              <td><?= $item->endereco ?></td>
              <td><?= $item->cod_curso ?></td>
          </tr>
          <?php endforeach ?>
+
+         <?php if(count($model->rows)==0)?>
+         <tr>
+             <td colspan="5">Nenhum aluno cadastrado</td>
+         </tr>
      </table>
 </fieldset>
 </body>
