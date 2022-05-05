@@ -9,7 +9,10 @@
 
 
     public static function index(){
-
+        include'model/alunoModel.php';
+        
+        $model = new alunoModel();
+        $model->getAllRows();
         include 'views/mod/aluno/listAluno.php';
     }
     public static function form(){
