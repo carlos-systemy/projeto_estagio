@@ -11,6 +11,7 @@
         <legend>Lista de aluno cadastrados</legend>
      <table>
          <tr>
+             <th></th>
              <th>id</th>
              <th>Nome</th>
              <th>CPF</th>
@@ -21,7 +22,7 @@
          <?php foreach($model->rows as $item):?>
          <tr>
              <td>
-                 <a href="/aluno/delete?id=<?= $item->nome?>"></a>
+                 <a href="/aluno/delete?id=<?= $item->nome?>">X</a>
              </td>
 
              <td><?= $item->id?></td>

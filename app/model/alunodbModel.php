@@ -65,7 +65,7 @@ class alunodbModel{
 
     public function delete(int $id)
     {
-        $sql = "DELETE * FROM  aluno WHERE id =?";
+        $sql = "DELETE FROM  aluno WHERE id = ?";
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $id);
         $stmt->execute();
