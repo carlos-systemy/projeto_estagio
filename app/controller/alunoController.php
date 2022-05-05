@@ -43,7 +43,6 @@
     public static function delete(){
         include'model/alunoModel.php';
         $model = new alunoModel();
-
         $model->delete((int)$_GET['id']);
         header("Location:/aluno");
 

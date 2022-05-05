@@ -22,7 +22,7 @@
          <?php foreach($model->rows as $item):?>
          <tr>
              <td>
-                 <a href="/aluno/delete?id=<?= $item->nome?>">X</a>
+                 <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
              </td>
 
              <td><?= $item->id?></td>

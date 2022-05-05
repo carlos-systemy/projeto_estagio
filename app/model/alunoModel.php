@@ -49,7 +49,6 @@ class alunoModel
     public function delete(int $id)
     {
         include 'model/alunodbModel.php';
-        
         $db = new alunodbModel;
         $db->delete($id);
     }
