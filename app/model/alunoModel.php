@@ -8,9 +8,9 @@ class alunoModel
 
     public function save()
     {
-        include'model/databaseModel.php';
+        include'model/alunodbModel.php';
 
-        $db = new databaseModel();
+        $db = new alunodbModel();
         
         if(empty($this->id)){
         
@@ -23,18 +23,18 @@ class alunoModel
 
     public function getAllRows()
     {
-        include'model/databaseModel.php';
+        include'model/alunodbModel.php';
 
-        $db = new databaseModel();
+        $db = new alunodbModel();
 
         $this->rows = $db->select();
     }
 
     public function getById(int $id)
     {
-        include'model/databaseModel.php';
+        include'model/alunodbModel.php';
 
-        $db = new databaseModel();
+        $db = new alunodbModel();
 
         $obj =$db->selectByid($id);
 
@@ -48,8 +48,8 @@ class alunoModel
     }
     public function delete(int $id)
     {
-        include 'model/databaseModel.php';
-        $db = new databaseModel;
+        include 'model/alunodbModel.php';
+        $db = new alunodbModel;
         $db->delete($id);
     }
 

@@ -1,7 +1,7 @@
 <?php
  
 
-class databaseModel{
+class alunodbModel{
     private $conexao;
 
     public function __construct()
