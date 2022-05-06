@@ -24,6 +24,9 @@ switch($url)
     case '/aluno/delete':
         alunoController::delete();
     break;
+    case '/cursos':
+        cursoController::index_curso();
+        break;
 
     default:
         echo "Erro 404";

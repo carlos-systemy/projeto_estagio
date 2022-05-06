@@ -5,7 +5,7 @@
 
     class alunoController
 {
-
+ 
 
 
     public static function index(){
