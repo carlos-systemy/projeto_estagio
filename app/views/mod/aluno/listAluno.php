@@ -12,7 +12,6 @@
      <table>
          <tr>
              <th></th>
-             <th>id</th>
              <th>Nome</th>
              <th>CPF</th>
              <th>Idade</th>
@@ -25,7 +24,7 @@
                  <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
              </td>
 
-             <td><?= $item->id?></td>
+             
            
 
              <td>
@@ -39,10 +38,11 @@
          </tr>
          <?php endforeach ?>
 
-         <?php if(count($model->rows)==0)?>
+         <?php if(count($model->rows)==0):?>
          <tr>
              <td colspan="5">Nenhum aluno cadastrado</td>
          </tr>
+         <?php endif ?>
      </table>
 </fieldset>
 </body>
