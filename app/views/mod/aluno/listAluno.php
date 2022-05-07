@@ -11,30 +11,30 @@
         <legend>Lista de aluno cadastrados</legend>
      <table>
          <tr>
-             <th></th>
+             
              <th>Nome</th>
              <th>CPF</th>
              <th>Idade</th>
              <th>Endereço</th>
              <th>Curso</th>
+             <th>Editar</th>
+             <th>Excluir</th>
          </tr>
          <?php foreach($model->rows as $item):?>
          <tr>
-             <td>
-                 <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
-             </td>
-
+             
              
            
 
-             <td>
-                 <a href="/aluno/form?id=<?= $item->id?>"><?= $item->nome ?></a>
-             </td>
-
+             <td><?= $item->nome ?></td>
              <td><?= $item->cpf ?></td>
              <td><?= $item->idade ?></td>
              <td><?= $item->endereco ?></td>
              <td><?= $item->cod_curso ?></td>
+             <td><a href="/aluno/form?id=<?= $item->id?>">Editar</a></td>
+             <td>
+                 <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
+             </td>
          </tr>
          <?php endforeach ?>
 
