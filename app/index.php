@@ -7,12 +7,12 @@ $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($url)
 {
-    case '/':
-       echo "funcionando tudo nos conformes";
+    case '/home':
+       alunoController::home();
     break;
 
     case '/aluno':
-        alunoController::index();
+        alunoController::list();
     break;
 
     case '/aluno/form':
@@ -28,7 +28,7 @@ switch($url)
     break;
 
     case '/cursos':
-        cursoController::index_curso();
+        cursoController::list_curso();
     break;
 
     case '/cursos/form':

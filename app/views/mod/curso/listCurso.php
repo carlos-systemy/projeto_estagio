@@ -7,9 +7,15 @@
     <title>Lista dos Alunos cadastrados</title>
 </head>
 <body>
+    <div class="botao">
+        <a href="/home">Ir para Home</a>
+        <a href="/cursos/form">Cadastrar novo curso</a>
+</div>
+
 <fieldset>
         <legend>Lista de aluno cadastrados</legend>
-     <table>
+     <div class="list-tabela">
+        <table>
          <tr>
              
              <th>Nome</th>
@@ -35,6 +41,7 @@
 
        
      </table>
+     </div>
 </fieldset>
 </body>
 </html>

@@ -8,7 +8,7 @@
  
 
 
-    public static function index_curso(){
+    public static function list_curso(){
         include'model/cursoModel.php';
         
         $model_curso = new cursoModel();

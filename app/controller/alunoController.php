@@ -5,10 +5,13 @@
 
     class alunoController
 {
- 
+    public static function home(){
+        
+        include 'views/index.php';
+    }
 
 
-    public static function index(){
+    public static function list(){
         include'model/alunoModel.php';
         
         $model = new alunoModel();
@@ -53,3 +56,6 @@
 
 }
 ?>
+
+
+

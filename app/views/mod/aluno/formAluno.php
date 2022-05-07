@@ -1,3 +1,15 @@
+<?php
+class formAluno{
+    private $conexao;
+
+    public function __construct()
+    {
+       $dsn="mysql:host=localhost:3306; dbname=estagio"; 
+
+       $this->conexao = new PDO($dsn, 'root','');
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +22,10 @@
     </style>
 </head>
 <body>
+<div class="botao">
+        <a href="/home">Ir para Home</a>
+        <a href="/aluno">Listar alunos</a>
+</div>
     <fieldset>
         <legend>Cadastro de aluno</legend>
         <form action="/aluno/form/save" method="post">

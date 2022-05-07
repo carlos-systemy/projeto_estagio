@@ -10,6 +10,10 @@
     </style>
 </head>
 <body>
+    <div class="botao">
+        <a href="/home">Ir para Home</a>
+        <a href="/cursos">Listar curso existentes</a>
+</div>
     <fieldset>
         <legend>Cadastro de Cursos</legend>
         <form action="/cursos/form/save" method="post">
