@@ -1,14 +1,14 @@
 <?php
-
+include_once 'model/CursodbModel.php';
 class cursoModel
 {
 
     public $id, $nome_curso, $professor, $descricao;
     public $rows;
-
+    
     public function save()
     {
-        include'model/cursodbModel.php';
+        
 
         $db = new cursodbModel();
         
@@ -23,7 +23,7 @@ class cursoModel
 
     public function getAllRows()
     {
-        include'model/cursodbModel.php';
+        
 
         $db = new cursodbModel();
 
@@ -32,7 +32,7 @@ class cursoModel
 
     public function getById(int $id)
     {
-        include'model/cursodbModel.php';
+        
 
         $db = new cursodbModel();
 
@@ -48,7 +48,7 @@ class cursoModel
     }
     public function delete(int $id)
     {
-        include 'model/cursodbModel.php';
+        
         $db = new cursodbModel;
         $db->delete_curso($id);
     }

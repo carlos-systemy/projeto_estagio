@@ -6,6 +6,7 @@ class alunodbModel{
 
     public function __construct()
     {
+       
        $dsn="mysql:host=localhost:3306; dbname=estagio"; 
 
        $this->conexao = new PDO($dsn, 'root','');
@@ -45,10 +46,14 @@ class alunodbModel{
         $stmt = $this->conexao->prepare($sql);
 
         $stmt->execute();
+        // Retorna um array com as linhas retornadas da consulta
 
         return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
-
+/**
+     * Retorna um registro específico da tabela pessoa do banco de dados.
+     * o método exige um parâmetro $id do tipo inteiro.
+     */
 
     public function selectByid(int $id)
     {

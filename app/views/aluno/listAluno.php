@@ -1,15 +1,19 @@
+<?php
+ include_once'controller/Url.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>asset/css/style.css">
     <title>Lista dos Alunos cadastrados</title>
 </head>
 <body>
 <div class="botao">
         <a href="/home">Ir para Home</a>
-        <a href="/aluno/form">Cadastrar novo curso</a>
+        <a href="/aluno/form">Cadastrar novo Aluno</a>
 </div>
 <fieldset>
         <legend>Lista de aluno cadastrados</legend>

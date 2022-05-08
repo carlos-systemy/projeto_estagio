@@ -1,14 +1,5 @@
 <?php
-class formAluno{
-    private $conexao;
-
-    public function __construct()
-    {
-       $dsn="mysql:host=localhost:3306; dbname=estagio"; 
-
-       $this->conexao = new PDO($dsn, 'root','');
-    }
-}
+ include_once'controller/Url.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +7,7 @@ class formAluno{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>asset/css/style.css">
     <title>Cadastar Aluno </title>
     <style>
         label,input{display: block;}

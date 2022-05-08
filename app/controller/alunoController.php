@@ -1,10 +1,12 @@
 <?php
 
 
-
+include_once'model/rdn/AlunoModel.php';
 
     class alunoController
 {
+    
+
     public static function home(){
         
         include 'views/index.php';
@@ -12,24 +14,24 @@
 
 
     public static function list(){
-        include'model/alunoModel.php';
+        
         
         $model = new alunoModel();
         $model->getAllRows();
-        include 'views/mod/aluno/listAluno.php';
+        include 'views/aluno/listAluno.php';
     }
     public static function form()
     {
-        include 'model/alunoModel.php';
+        
         $model = new alunoModel();
         if(isset($_GET['id']))
         $model = $model->getById((int) $_GET['id']);
         //var_dump($model);
-        include 'views/mod/aluno/formAluno.php';
+        include 'views/aluno/formAluno.php';
         
     }
     public static function save(){
-        include 'model/alunoModel.php';
+        
         
         $model = new alunoModel();
 
@@ -44,7 +46,7 @@
         header("Location:/aluno");
     }
     public static function delete(){
-        include'model/alunoModel.php';
+        
         $model = new alunoModel();
         $model->delete((int)$_GET['id']);
         header("Location:/aluno");
