@@ -40,7 +40,7 @@
              <td><?= $item->cod_curso ?></td>
              <td><a href="/aluno/form?id=<?= $item->id?>">Editar</a></td>
              <td>
-                 <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
+                 <a href="/aluno/delete?id=<?= $item->id?>">Excluir</a>
              </td>
          </tr>
          <tbody>
