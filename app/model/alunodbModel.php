@@ -57,7 +57,7 @@ class alunodbModel{
 
     public function selectByid(int $id)
     {
-        include_once'model/alunoModel.php';
+        include_once'model/rdn/AlunoModel.php';
         
         $sql = "SELECT * FROM  aluno WHERE id=?";
         $stmt = $this->conexao->prepare($sql);
