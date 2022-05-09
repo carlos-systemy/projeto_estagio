@@ -13,19 +13,21 @@
 </head>
 <body>
     <div class="container">
+        <div class="box">
     <div class="titulo">
         <h1>SimCursos</h1> 
     </div>
 <div class="botao">
         <a href="/aluno/form">Cadastrar Aluno</a>
-        <br> 
+        
         <a href="/aluno">Listar alunos</a>
-        <br> 
+         
         <a href="/cursos/form">Cadastrar Cursos</a>
-        <br> 
+        
         <a href="/cursos">Listar Cursos</a>
-        <br> 
-</div>
+        
+        </div>
+    </div>
 </div>
 </body>
 </html>

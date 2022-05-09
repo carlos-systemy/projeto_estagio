@@ -12,14 +12,15 @@
 </head>
 <body>
     <div class="botao">
-        <a href="/home">Ir para Home</a>
+        <a href="/">Ir para Home</a>
         <a href="/cursos/form">Cadastrar novo curso</a>
 </div>
 
 <fieldset>
         <legend>Lista de aluno cadastrados</legend>
-     <div class="list-tabela">
-        <table>
+     
+        <table class="list-tabela">
+            <thead>
          <tr>
              
              <th>Nome</th>
@@ -29,7 +30,9 @@
              <th>Excluir</th>
              
          </tr>
+         </thead>
          <?php foreach($model_curso->rows as $item_curso):?>
+         <tbody>
          <tr>
              
     
@@ -41,11 +44,13 @@
                  <a href="/cursos/delete?id=<?= $item_curso->id?>">excluir</a>
              </td>
          </tr>
+         </tbody>
+         
          <?php endforeach ?>
 
        
      </table>
-     </div>
+     
 </fieldset>
 </body>
 </html>

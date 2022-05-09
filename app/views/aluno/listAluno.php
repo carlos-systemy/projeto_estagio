@@ -12,12 +12,13 @@
 </head>
 <body>
 <div class="botao">
-        <a href="/home">Ir para Home</a>
+        <a href="/">Ir para Home</a>
         <a href="/aluno/form">Cadastrar novo Aluno</a>
 </div>
 <fieldset>
         <legend>Lista de aluno cadastrados</legend>
-     <table>
+     <table class="list-tabela">
+     <thead>
          <tr>
              
              <th>Nome</th>
@@ -28,12 +29,10 @@
              <th>Editar</th>
              <th>Excluir</th>
          </tr>
+    </thead>
          <?php foreach($model->rows as $item):?>
+            <tbody>
          <tr>
-             
-             
-           
-
              <td><?= $item->nome ?></td>
              <td><?= $item->cpf ?></td>
              <td><?= $item->idade ?></td>
@@ -44,6 +43,7 @@
                  <a href="/aluno/delete?id=<?= $item->id?>">excluir</a>
              </td>
          </tr>
+         <tbody>
          <?php endforeach ?>
 
          <?php if(count($model->rows)==0):?>

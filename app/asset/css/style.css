@@ -1,3 +1,102 @@
-body{
-    background: #ce7575;
-}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .box {
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    }
+    body {
+    margin: 0px;
+    background: #5febb5;
+    padding: 0; 
+    box-sizing: border-box;
+    }
+    .titulo h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  .botao a {
+   
+    background-color:  rgb(77, 129, 224);
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .botao a:hover  {
+    background-color: #13df91;
+  }
+  fieldset {
+    background-color: rgb(189, 182, 182);
+    border-radius: 15px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin: 0px auto;
+    
+   }
+  
+  legend {
+   border-radius: 15px;
+    background-color: rgb(16, 156, 98);
+    color: rgb(2, 2, 2);
+    padding: 5px 10px;
+  }
+  .list-tabela{
+    width: 100%; 
+    text-align: center;
+  }
+  .list-tabela thead{
+    background: black;
+     font-weight: bold;
+      color:rgb(255, 255, 255);
+  }
+  .list-tabela tbody tr{
+      background: #ccc;
+    }
+    .list-tabela th , .list-tabela td{
+        padding: 7px 0;
+    }
+.formulario label{
+    font-weight: bold;
+    width: 100%; 
+    text-align: center;
+    }
+.formulario input{
+        border: 2px solid rgb(3, 3, 3);
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 50vw; 
+        margin-left : 5vw;
+    }
+    button {
+        background-color: rgb(77, 129, 224) ;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 15px  320px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+       
+    button:hover {
+        background-color:  #13df91; 
+        color: #080808;
+      }

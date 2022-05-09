@@ -1,13 +1,11 @@
-<?php
- include_once'controller/Url.php'
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= $BASE_URL ?>asset/css/style.css">
+    <link rel="stylesheet" href="http://localhost:99/asset/css/style.css">
     <title>Cadastar Aluno </title>
     <style>
         label,input{display: block;}
@@ -15,12 +13,12 @@
 </head>
 <body>
 <div class="botao">
-        <a href="/home">Ir para Home</a>
+        <a href="/">Ir para Home</a>
         <a href="/aluno">Listar alunos</a>
 </div>
     <fieldset>
         <legend>Cadastro de aluno</legend>
-        <form action="/aluno/form/save" method="post">
+        <form class="formulario" action="/aluno/form/save" method="post">
 
         <input type="hidden" value="<?= $model->id ?>" name="id">
             <label for="nome" >Nome:</label>

@@ -49,7 +49,7 @@ class cursodbModel{
 
     public function selectByid_curso(int $id)
     {
-        include_once'model/cursoModel.php';
+        include_once'model/rdn/CursoModel.php';
         
         $sql = "SELECT * FROM  cursos WHERE id=?";
         $stmt_curso = $this->conexao->prepare($sql);

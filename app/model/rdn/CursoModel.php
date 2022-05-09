@@ -20,7 +20,7 @@ class cursoModel
         }
 
     }
-
+/* $rows será acessado e possibilitará listar os registros vindos do banco de dados*/
     public function getAllRows()
     {
         
@@ -29,7 +29,11 @@ class cursoModel
 
         $this->rows = $db->select_curso();
     }
-
+/**
+     * esse é o metodo que encapsula o acesso ao método selectById da do cursodbmodel
+     * O método recebe um parâmetro do tipo inteiro que é o id do registro
+     * um ser recuperador do MySQL.
+     */
     public function getById(int $id)
     {
         
