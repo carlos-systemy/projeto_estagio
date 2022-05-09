@@ -6,6 +6,7 @@ include_once'model/rdn/AlunoModel.php';
     class alunoController
 {
     
+    
 
     public static function home(){
         
