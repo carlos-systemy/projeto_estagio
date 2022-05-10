@@ -39,9 +39,9 @@
              <td><?= $item_curso->nome_curso ?></td>
              <td><?= $item_curso->professor ?></td>
              <td><?= $item_curso->descricao ?></td>
-             <td><a href="/cursos/form?id=<?= $item_curso->id?>">Editar</a></td>
-             <td>
-                 <a href="/cursos/delete?id=<?= $item_curso->id?>">Excluir</a>
+             <td class="editar"><a href="/cursos/form?id=<?= $item_curso->id?>">Editar</a></td>
+             <td class="excluir" >
+                 <a  href="/cursos/delete?id=<?= $item_curso->id?>">Excluir</a>
              </td>
          </tr>
          </tbody>

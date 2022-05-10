@@ -25,8 +25,8 @@
       justify-content: center;
   }
 .botao a {
-  border-width: 2px red;
-  background-color:  rgb(77, 129, 224);
+  
+  background-color:  rgb(61, 104, 184);
   align-items: center;
   justify-content: center;
   font-weight: bold;
@@ -68,6 +68,20 @@ legend {
 .list-tabela tbody tr{
     background: #ccc;
   }
+  .list-tabela  td a:link, a:visited{
+    
+      background-color: rgb(61, 104, 184);
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+    
+      .list-tabela  td a:hover,  a:active {
+      background-color: rgb(74, 236, 115);
+    }
+  
   .list-tabela th , .list-tabela td{
       padding: 7px 0;
   }
@@ -85,6 +99,7 @@ legend {
       margin-left : 5vw;
       
   }
+
   button {
       background-color: rgb(77, 129, 224) ;
       border: none;

@@ -4,6 +4,9 @@ class cursoModel
 {
 
     public $id, $nome_curso, $professor, $descricao;
+    /**
+     * Propriedade que armazenará o array retornado do alunodbModel com a listagem dos cursos.
+     */
     public $rows;
     
     public function save()
