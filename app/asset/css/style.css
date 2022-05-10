@@ -62,28 +62,28 @@ legend {
 }
 .list-tabela thead{
   background: black;
-   font-weight: bold;
-    color:rgb(255, 255, 255);
+  font-weight: bold;
+  color:rgb(255, 255, 255);
 }
 .list-tabela tbody tr{
-    background: #ccc;
+  background: #ccc;
   }
-  .list-tabela  td a:link, a:visited{
+.list-tabela  td a:link, a:visited{
     
-      background-color: rgb(61, 104, 184);
-      color: white;
-      padding: 14px 25px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
+  background-color: rgb(61, 104, 184);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   }
     
-      .list-tabela  td a:hover,  a:active {
-      background-color: rgb(74, 236, 115);
+.list-tabela  td a:hover,  a:active {
+  background-color: rgb(74, 236, 115);
     }
   
-  .list-tabela th , .list-tabela td{
-      padding: 7px 0;
+.list-tabela th , .list-tabela td{
+   padding: 7px 0;
   }
 .formulario label{
   font-weight: bold;
@@ -91,30 +91,30 @@ legend {
   text-align: center;
   }
 .formulario input{
-      border: 2px solid rgb(3, 3, 3);
-      border-radius: 4px;
-      padding-left: 10px;
-      padding-top: 10px;
-      width: 50vw; 
-      margin-left : 5vw;
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 50vw; 
+  margin-left : 5vw;
       
   }
 
-  button {
-      background-color: rgb(77, 129, 224) ;
-      border: none;
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      font-size: 16px;
-      margin: 15px  auto;
-      transition-duration: 0.4s;
-      cursor: pointer;
+button {
+  background-color: rgb(77, 129, 224) ;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 15px  auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
     }
      
-  button:hover {
-      background-color:  #13df91; 
-      color: #080808;
+button:hover {
+  background-color:  #13df91; 
+  color: #080808;
     }
