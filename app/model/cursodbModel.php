@@ -16,7 +16,7 @@ class cursodbModel{
     {
     // DSN (Data Source Name) onde o servidor MySQL será encontrado
     // (host) em qual porta o MySQL está operado e qual o nome do banco pretendido
-       $dsn="mysql:host=localhost:3306; dbname=estagio"; 
+       $dsn="mysql:host=localhost:3306; dbname=projeto"; 
     // Criando a conexão e armazenado na propriedade definida para tal
        $this->conexao = new PDO($dsn, 'root','');
     }

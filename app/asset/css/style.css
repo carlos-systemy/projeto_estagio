@@ -9,12 +9,12 @@
   .box {
   border-radius: 15px;
   width: 400px;
-  height: 360px;
+  height: 340px;
   background: #fff;
   }
   body {
   margin: 0px;
-  background: #5febb5;
+  background-image: linear-gradient(to right, #1a1f20, #008080);
   padding: 0; 
   box-sizing: border-box;
   }
@@ -26,7 +26,7 @@
   }
 .botao a {
   
-  background-color:  rgb(61, 104, 184);
+  background-color:  #1AF9E2;
   align-items: center;
   justify-content: center;
   font-weight: bold;
@@ -38,7 +38,8 @@
 }
 
 .botao a:hover  {
-  background-color: #13df91;
+  background-color: #4cb88e;
+  color: rgb(255,255,255);
 }
 fieldset {
   background-color: rgb(233, 223, 223);
@@ -52,8 +53,8 @@ fieldset {
 
 legend {
  border-radius: 15px;
-  background-color: #13df91;
-  color: rgb(2, 2, 2);
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
   padding: 5px 10px;
 }
 .list-tabela{
@@ -70,16 +71,17 @@ legend {
   }
 .list-tabela  td a:link, a:visited{
     
-  background-color: rgb(61, 104, 184);
-  color: white;
-  padding: 14px 25px;
+  background-color: #1AF9E2;
+  color: rgb(0, 0, 0);
+  padding: 9px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   }
     
 .list-tabela  td a:hover,  a:active {
-  background-color: rgb(74, 236, 115);
+  background-color: rgb(247, 96, 96);
+  color: rgb(255, 255, 255);
     }
   
 .list-tabela th , .list-tabela td{
