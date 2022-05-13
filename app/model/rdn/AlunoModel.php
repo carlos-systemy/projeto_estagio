@@ -23,13 +23,13 @@ class alunoModel
         }
     }
    /* $rows será acessado e possibilitará listar os registros vindos do banco de dados*/
-    public function getAllRows()
-    {
-         // Instância do objeto e conexão no banco de dados via construtor
-        $db = new alunodbModel();
-        // Abastecimento da propriedade $rows com as "linhas" vindas do MySQL
-        $this->rows = $db->select();
-    }
+   public function getAllRows()
+   {
+   // Instância do objeto e conexão no banco de dados via construtor
+       $db = new alunodbModel();
+   // Abastecimento da propriedade $rows com as "linhas" vindas do MySQL
+       $this->rows = $db->select();
+   }
 /**
      * esse é o metodo que encapsula o acesso ao método selectById da do Alunodbmodel
      * O método recebe um parâmetro do tipo inteiro que é o id do registro
@@ -49,6 +49,7 @@ class alunoModel
             return new alunoModel; // Retornando um objeto específico AlunoModel
         }
     }
+
     public function delete(int $id)
     {
         
